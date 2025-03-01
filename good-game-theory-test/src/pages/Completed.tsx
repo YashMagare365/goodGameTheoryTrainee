@@ -41,10 +41,10 @@ const Completed = () => {
       <img
         src={isPerfectScore ? winner_astronaut : astronautRocket}
         alt="Astronaut"
-        className="w-[40%] max-w-[250px] md:max-w-[300px] lg:max-w-[350px] mt-6"
+        className="w-[20%] max-w-[250px] md:max-w-[300px] lg:max-w-[350px] mt-6"
       />
 
-      <div className="flex flex-wrap justify-center items-center w-full mt-4 gap-6">
+      <div className="flex flex-wrap justify-around items-center w-full mt-4 gap-6">
         <img
           src={Rocket}
           alt="rocket"
@@ -75,11 +75,7 @@ const Completed = () => {
         />
       </div>
 
-      <img
-        src={Cloud}
-        alt="Clouds"
-        className="absolute bottom-0 left-0 w-full h-20 md:h-24 lg:h-32 opacity-90 max-sm:h-10"
-      />
+      <img src={Cloud} alt="Clouds" className="fixed bottom-0 w-full h-10" />
     </GradientBackground>
   );
 };
