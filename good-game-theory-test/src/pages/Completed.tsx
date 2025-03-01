@@ -16,12 +16,10 @@ const Completed = () => {
     <GradientBackground>
       <StarsBackground />
 
-      {/* Game Title */}
       <h1 className="text-3xl md:text-4xl font-bold mt-6 text-center">
         Mystery Blocks
       </h1>
 
-      {/* Score & Feedback Section */}
       <div className="text-center mt-4">
         {isPerfectScore ? (
           <h2 className="text-3xl md:text-4xl font-extrabold">Correct!</h2>
@@ -40,14 +38,12 @@ const Completed = () => {
         )}
       </div>
 
-      {/* Astronaut Image */}
       <img
         src={isPerfectScore ? winner_astronaut : astronautRocket}
         alt="Astronaut"
         className="w-[40%] max-w-[250px] md:max-w-[300px] lg:max-w-[350px] mt-6"
       />
 
-      {/* Buttons & Rockets */}
       <div className="flex flex-wrap justify-center items-center w-full mt-4 gap-6">
         <img
           src={Rocket}
@@ -79,7 +75,6 @@ const Completed = () => {
         />
       </div>
 
-      {/* Cloud Background */}
       <img
         src={Cloud}
         alt="Clouds"
